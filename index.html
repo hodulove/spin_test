@@ -7,21 +7,38 @@
 </head>
 <body>
     <div style="text-align : center;">
-    <img id="spin" src="https://i.postimg.cc/kXstW008/Untitled-1-01.png" height="600">
+    <img id="spin" src="https://i.postimg.cc/MHf4RdYr/10.gif" height="400">
 </div>
 <div style=" text-align: center;">
     <button onclick="toggleImg()" id="btn">유 스핀 미</button>
     <script>
         function toggleImg() {
             var randnum = Math.floor(Math.random() * 5 +1);
-            if ( randnum < 5 ){
-                document.getElementById("spin").src = "https://i.postimg.cc/66Yb6fwh/spinonce.gif";
+            if ( randnum ===1 ){
+                document.getElementById("spin").src = "https://i.postimg.cc/76hTtDgW/1.gif" ;
             }
+            else if( randnum ===2 ){
+                document.getElementById("spin").src = "https://i.postimg.cc/gJ7Lf5sk/2.gif";
+            }
+            else if( randnum ===3 ){
+                document.getElementById("spin").src = "https://i.postimg.cc/q7kKn2g0/3.gif";
+            }
+            else if( randnum ===4 ){
+                document.getElementById("spin").src = "https://i.postimg.cc/N0pHxLrX/4.gif";
+            }
+            
             else{
-                document.getElementById("spin").src = "https://i.postimg.cc/bvkHVJbZ/1.gif";
+                document.getElementById("spin").src = "https://i.postimg.cc/GtsTrQgP/image.gif";
             }
         }
     </script>
     </div>
+        <div style="float: left; width: 50%;">
+            <img id="b1" src="https://i.postimg.cc/0NRpXf7m/1.gif" height="200">
+        </div>
+
+        <div style="float: left; width: 50%;">
+            <img id="b2" src="https://i.postimg.cc/nhQ4159p/image.gif" height="200">
+        </div>
 </body>
 </html>
